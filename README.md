@@ -6,8 +6,8 @@ Clone Youtube with Vanilla and nodeJS
 ##Pages:
 
 - [ ] Home
-	- [ ] Join
-	- [ ] Login
+	- [x] Join
+	- [x] Login
 	- [x] Search
 	- [ ] User Detail
 	- [ ] Edit Profile
