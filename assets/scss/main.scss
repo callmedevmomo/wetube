@@ -9,14 +9,12 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-
 main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 70vh;
 }
-
 button,
 input:not([type="file"]),
 textarea,
@@ -41,11 +39,9 @@ button {
   background-color: #3498db;
   color: white;
 }
-
 button.delete {
   background-color: $dark-red;
 }
-
 button,
 input[type="submit"] {
   cursor: pointer;
