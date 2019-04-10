@@ -3,7 +3,6 @@ import routes from "../routes";
 import User from "../models/User";
 
 export const getJoin = (req, res) => res.render("join", { pageTitle: "Join" });
-
 export const postJoin = async (req, res, next) => {
   const {
     body: { name, email, password, password2 }
@@ -99,7 +98,7 @@ export const logout = (req, res) => {
 };
 
 export const getMe = (req, res) => {
-  res.render("userDETAIL", { pageTitle: "User Detail", user: req.user });
+  res.render("userDetail", { pageTitle: "User Detail", user: req.user });
 };
 
 export const userDetail = async (req, res) => {
@@ -108,14 +107,15 @@ export const userDetail = async (req, res) => {
   } = req;
   try {
     const user = await User.findById(id);
-    res.render("userDETAIL", { pageTitle: "User Detail", user });
+    console.log(user.avatarUrl);
+    res.render("userDetail", { pageTitle: "User Detail", user });
   } catch (error) {
     res.redirect(routes.home);
   }
 };
 
 export const getEditProfile = (req, res) =>
-  res.render("editPROFILE", { pageTitle: "Edit Profile" });
+  res.render("editProfile", { pageTitle: "Edit Profile" });
 
 export const postEditProfile = async (req, res) => {
   const {
