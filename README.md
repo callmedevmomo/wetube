@@ -14,3 +14,6 @@ Clone Youtube with Vanilla and nodeJS
 - [x] Upload 
 - [x] Video Detail 
 - [x] Edit Video
+
+
+## 20190410~
